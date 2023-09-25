@@ -2,11 +2,11 @@ package com.example.lesson02.domain;
 
 import java.util.Date;
 
-//DTO, model, domain :가공 후 (같은 단어) 
+//DTO, model, domain 이라고 불리는 객체!!!! : 가공 후 (같은 단어) 
 //Entity : 가공 전
 public class UsedGoods {
-	//필드
-	//null 여부 확인 > Integer
+	//필드 : DB에 있는 데이터들 : desc `used_good`; 해서 field 확인후 붙여넣기 
+	//데이터 중 null 여부 확인 > null이 된다면 Integer로 담아줘야함. ex) private Integer id;
 	private int id;
 	private int sellerId;
 	private String title;

@@ -3,7 +3,7 @@ package com.example.lesson01;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
+@Controller //jsp를 뿌릴 때는 @ResponseBody가 없는 @Controller를 사용해야함
 public class Lesson01Ex02Controller {
 
 		//요청URL : http://localhost/lesson01/ex02
