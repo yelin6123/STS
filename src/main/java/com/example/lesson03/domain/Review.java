@@ -3,7 +3,7 @@ package com.example.lesson03.domain;
 import java.util.Date;
 
 public class Review {
-	private int id;
+	private int id; 
 	private int storeId;
 	private String menu;
 	private String userName;
