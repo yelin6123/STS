@@ -18,4 +18,30 @@ public class ReviewBO {
  	public Review getReview(int id) {
  		return reviewMapper.selectReview(id); 
  	}
+ 	
+ 	//input : Review 객체 (단 건)
+ 	//output : int(성공된 행의 개수)
+ 	public int addReview(Review review) {
+ 		return reviewMapper.insertReview(review);
+ 	}
+ 	
+ 	public int addReviewAsField(
+ 			int storeId, String menu, String userName, 
+ 			Double point, String review) {
+		
+		return reviewMapper.insertReviewAsField(storeId, menu, userName, point, review);
+	}
+ 	
+ 	//ex03
+ 	//input : id, review
+ 	//output : int 성공된 행의 개수
+ 	public int updateReviewById(int id, String review) {
+ 		return reviewMapper.updateReviewById(id, review);
+ 	}
+ 	
+ 	//ex04 delete
+ 	public void deleteReviewById(int id) {
+ 		reviewMapper.deleteReviewById(id);
+ 	}
+ 	
 } 
