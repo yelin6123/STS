@@ -90,9 +90,9 @@
 					return;
 				}
 				
-				//requestParam 으로 잘 들고 왔는지 
 				let introduce = $("#introduce").val();
 
+				//requestParam 으로 잘 들고 왔는지 
 				console.log(name);
 				console.log(yyyymmdd);
 				console.log(email);

@@ -25,4 +25,10 @@ public class UserBO {
 		return userMapper.selectLatestUser();
 	}
 	
+	//lesson06ex02
+	//input:name   output:boolean(중복 true)
+	public boolean existUserByName(String name) {
+		return userMapper.existUserByName(name);
+	}
+	
 }
